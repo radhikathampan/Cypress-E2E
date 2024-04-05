@@ -17,7 +17,7 @@
         
            regObj.enterFirstName(regData.firstName)
             regObj.enterLastName(regData.lastName)
-            regObj.enterEmail(faker.internet.email())
+            regObj.enterEmail("test@qaworld.com")
             regObj.enterPhone(regData.phone)
             regObj.enterPassword(regData.password)
             regObj.selectCheckBox()
