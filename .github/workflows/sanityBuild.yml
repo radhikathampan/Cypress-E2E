@@ -32,7 +32,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
          browser: chrome
-         command: npm run test:registerFlow"
+         command: npm run test:registerFlow
 
       - name: Cypress Test Register Report
         uses: actions/upload-artifact@v4
