@@ -14,6 +14,12 @@ jobs:
          browser: chrome
          command: npm run test:cart
 
+      - name: Cypress Test Cart Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: cartTest Report
+          path: cypress/reports/html 
+
 
   register-test:
     runs-on: ubuntu-22.04
@@ -27,3 +33,9 @@ jobs:
         with:
          browser: chrome
          command: npm run test:registerFlow"
+
+      - name: Cypress Test Register Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: RegisterFlow Report
+          path: cypress/reports/html
